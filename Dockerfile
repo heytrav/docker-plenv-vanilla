@@ -1,4 +1,6 @@
-FROM base
+# Use my ubuntu with latex container until we get rid of tex libs. Saves me
+# having to rebuild it every time
+FROM heytrav/trusty-with-latex
 
 RUN apt-get update
 RUN apt-get install -y --force-yes build-essential curl git
