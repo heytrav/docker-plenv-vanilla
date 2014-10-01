@@ -23,6 +23,8 @@ RUN for i in `cat /build/perls.txt`; \
         plenv install-cpanm ; \
         cpanm Carton  \
             local::lib \
+            List::Util \
+            experimental \
             Module::Install;  \ 
     done
 
