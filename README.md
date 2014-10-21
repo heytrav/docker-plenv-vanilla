@@ -10,7 +10,7 @@ You can customize the list of perls in `perls.txt`.
 > docker build -t miyagawa/plenv .
 ```
 
-Now you get an image called miyagawa/plenv with plenv setup for all available perls on CPAN under `/root/.plenv`.
+Now you get an image called miyagawa/plenv with plenv setup for all available perls on CPAN under `/usr/local/.plenv`.
 
 ## Test CPAN modules with Vanilla perl
 
