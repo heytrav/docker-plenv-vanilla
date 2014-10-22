@@ -7,8 +7,8 @@ RUN apt-get install -y --force-yes build-essential curl git
 RUN apt-get install -y libssl-dev
 RUN apt-get clean
 
-RUN git clone git://github.com/tokuhirom/plenv.git /root/.plenv
-RUN git clone git://github.com/tokuhirom/Perl-Build.git /root/.plenv/plugins/perl-build/
+RUN git clone git://github.com/tokuhirom/plenv.git /usr/local/.plenv
+RUN git clone git://github.com/tokuhirom/Perl-Build.git /usr/local/.plenv/plugins/perl-build/
 ADD ./plenv.sh /etc/profile.d/plenv.sh
 
 RUN mkdir /build
