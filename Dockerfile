@@ -1,6 +1,6 @@
 # Use my ubuntu with latex container until we get rid of tex libs. Saves me
 # having to rebuild it every time
-FROM heytrav/trusty-with-latex
+FROM ubuntu:trusty
 MAINTAINER Travis Holton <travis@ideegeo.com>
 
 ADD ./plenv.sh /etc/profile.d/plenv.sh
