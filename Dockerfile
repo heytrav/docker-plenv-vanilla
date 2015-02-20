@@ -7,7 +7,7 @@ ADD ./plenv.sh /etc/profile.d/plenv.sh
 ADD ./perls.txt /build/perls.txt
 
 RUN apt-get update && \
-    apt-get install -y --force-yes inotifywait build-essential curl git && \
+    apt-get install -y --force-yes build-essential curl git && \
      apt-get install -y libssl-dev && \
     apt-get clean
 RUN git clone git://github.com/tokuhirom/plenv.git /usr/local/.plenv && \
