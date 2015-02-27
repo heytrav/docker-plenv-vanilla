@@ -1,2 +1,2 @@
 build:
-   docker-plenv-vanilla: .
+   docker.domarino.com/docker-plenv-vanilla: .
